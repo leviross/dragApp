@@ -1,0 +1,28 @@
+.image-box{
+  background-color: rgba(0,0,0,0.3);
+  height: 275px;
+  margin-bottom: 25px;
+}
+
+.fav-box{
+  background-color: rgba(0,0,0,0.3);
+  height: 275px;
+  margin-bottom: 25px;
+}
+
+.archive-box{
+  background-color: rgba(0,0,0,0.3);
+  height: 275px;
+}
+
+.thumbnail{
+  width:33%;
+  height: 125px;
+  float: right;
+}
+
+div.draggable-objects:after{
+  display: block;
+  content:"";
+  clear:both;
+}

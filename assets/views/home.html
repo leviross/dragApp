@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h1>Image Gallery</h1>
+    <div ng-drop="true" ng-drop-success="onDropOriginal($data,$event)" class="image-box draggable-objects">
+      <img ng-repeat="obj in draggableObjects" class="thumbnail" ng-drag="true" ng-drag-data="obj" src="{{obj.name}}">
+      <!-- <img class="thumbnail" ng-drag="true" ng-drag-data="" src="">
+      <img class="thumbnail" ng-drag="true" ng-drag-data="" src="">
+      <img class="thumbnail" ng-drag="true" ng-drag-data="" src="">
+      <img class="thumbnail" ng-drag="true" ng-drag-data="" src="">
+      <img class="thumbnail" ng-drag="true" ng-drag-data="" src=""> -->
+    </div>
+  </div>
+</div>
+
+
+</br>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h1>Favorites Gallery</h1>
+    <div ng-drop="true" ng-drop-success="onDropComplete1($data,$event)" class="fav-box">
+      <img class="thumbnail" ng-repeat="obj in droppedObjects1" ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragSuccess1($data,$event)" ng-center-anchor="{{centerAnchor}}" src="{{obj.name}}">
+    </div>
+  </div>
+</div>
+
+</br>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h1>Archived Gallery</h1>
+    <div ng-drop="true" ng-drop-success="onDropComplete2($data,$event)" class="fav-box">
+      <img class="thumbnail" ng-repeat="obj in droppedObjects2" ng-drag="true" ng-drag-data="obj" ng-drag-success="onDragSuccess2($data,$event)" ng-center-anchor="{{centerAnchor}}" src="{{obj.name}}">
+    </div>
+  </div>
+</div>
+
+
+
